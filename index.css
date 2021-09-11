@@ -1,0 +1,71 @@
+body {
+  background-color: #c0fdff;
+  background-image: url('whale.png');
+  background-repeat: no-repeat;
+  background-size: 200px 150px;
+  background-position-x: 7rem;
+  background-position-y: 1rem;
+}
+h1 {
+  color:#457b9d;
+  font-family:'Courier New', Courier, monospace;
+}
+ul {
+  list-style: '\1F4CC';
+}
+li{
+  padding: 5px;
+  font-size:small;
+  color: #3a0ca3;
+}
+li button {
+  margin: 5px;
+  border-radius: 2rem;
+  border: 1px solid #e8eddf;
+  background-color: #dfe7fd;
+  color:#9a8c98;
+} 
+.main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.completed {
+  font-size: small;
+  color: #62b6cb;
+  list-style: none;
+  text-decoration: line-through;
+}
+
+#todoList-board{
+  border: 10px solid #5aa9e6;
+  margin: 5%;
+  align-self: center;
+  background-color: #90e0ef;
+  border-radius: 25px;
+  min-height: 50vh;
+  height: max-content;
+  width: 50vw;
+  word-wrap: break-word;
+}
+input{
+  padding:3px 30px ;
+  border-radius: 2rem;
+  border: 2px solid  #a8dadc;
+  text-align: center;
+  outline: none;
+  color:#5aa9e6;
+}
+
+::placeholder{
+  color:#5aa9e6;
+}
+
+form button {
+  padding: 2px 15px ;
+  border-radius: 2rem;
+  border: 1px solid #e8eddf;
+  background-color: #dfe7fd;
+  color:#9a8c98;
+}
+
