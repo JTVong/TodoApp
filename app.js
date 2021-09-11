@@ -61,7 +61,7 @@ form.addEventListener('submit', (e)=>{
   currentTodoList.append(createNewTodo(input.value));// attach todo on the currentTodoList
   input.value = "";// clear todoInput
   } else { //alert when user input empty todo
-    alert('please type friend name')
+    alert('please type new todo!')
   };
 });
 /* function saveTodos, updates current todoList to localStorage  */
