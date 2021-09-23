@@ -46,7 +46,6 @@ if(localStorage.todoList) {
     } 
     else if(e.target.tagName === 'BUTTON') {
       let removedTodo = e.target.parentElement.innerText.split('remove')[0];
-      console.log(removedTodo);
       delete todoListObj[removedTodo]; // remove todo from todoListObj
       e.target.parentElement.remove();//remove todo out from todoList
       saveTodos(todoListObj);//update localStorage
