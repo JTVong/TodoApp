@@ -3,7 +3,7 @@ const input = document.querySelector('#task');
 const todoListBoard = document.querySelector('#todoList-board');
 const currentTodoList = document.createElement('ul'); 
 currentTodoList.setAttribute('id','todoList');
-let todoListObj = {}; // take name as key and favoritefriend status as value
+let todoListObj = {}; // take name as key 
 
 const createNewTodo = (inputTodo) => { // string input
   const newTodo= document.createElement('li'); //create <li></li> tag
@@ -64,19 +64,6 @@ form.addEventListener('submit', (e)=>{
 });
 /* function saveTodos, updates current todoList to localStorage  */
 
-
-/* function renderTodoList, create todoLIst from previous todolist in localStorage */
-const renderTodoList = () => {
-  todoListObj = {...JSON.parse(localStorage.todoList)};
-  for(let list in todoListObj){
-    let newList = createNewTodo(list);
-    if(todoListObj[list]==='completed'){
-      newList.setAttribute('class','completed');
-      } 
-    currentTodoList.append(newList);
-  }
-  todoListBoard.append(currentTodoList);
-}
 const saveTodos = (updatedTodoList) => {
   localStorage.todoList = JSON.stringify(updatedTodoList);
 }
