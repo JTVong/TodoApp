@@ -33,7 +33,6 @@ if(localStorage.todoList) {
   currentTodoList.addEventListener('click', (e)=> {
     if(e.target.tagName === 'LI') { 
       let todo = e.target.innerText.split('remove')[0]; // getting only todo name
-      console.log(todo);
       if(e.target.classList.length){ // check if todo is crossed as completed
         e.target.classList.remove('completed');// take out crossing 
         todoListObj[todo] = "";
